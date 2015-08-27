@@ -1,0 +1,21 @@
+services:
+#    a_star_demo.example:
+#        class: AStar\DemoBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+    a_star_demo.admin.wine:
+        class: AStar\DemoBundle\Admin\WineAdmin
+        arguments: [~, AStar\DemoBundle\Entity\Wine, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Wine}
+
+    a_star_demo.admin.winery:
+        class: AStar\DemoBundle\Admin\WineryAdmin
+        arguments: [~, AStar\DemoBundle\Entity\Winery, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Winery}
+
+    a_star_demo.admin.region:
+        class: AStar\DemoBundle\Admin\RegionAdmin
+        arguments: [~, AStar\DemoBundle\Entity\Region, SonataAdminBundle:CRUD]
+        tags:
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Region}

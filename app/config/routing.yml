@@ -1,0 +1,7 @@
+a_star_demo:
+    resource: "@AStarDemoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
