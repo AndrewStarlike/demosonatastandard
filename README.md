@@ -1,4 +1,4 @@
-Symfony Standard Edition
+Sonata Admin Bundle
 ========================
 
 Welcome to the Sonata Admin Bundle demo.
